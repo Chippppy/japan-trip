@@ -33,13 +33,20 @@ window.addEventListener('DOMContentLoaded', () => {
 
     setTimeout(() => {
       mainContent.classList.add('active');
+      splash.innerHTML = "";
+      logoContainer.innerHTML = "";
+      logoElements.innerHTML = "";
     }, 3500);
 
   });
 });
 
 const openNav = () => {
-  document.getElementById('mySidenav').style.width = "250px";
+  if(mySidenav.style.width == '18%') {
+    document.getElementById('mySidenav').style.width = "0px"
+  } else {
+    document.getElementById('mySidenav').style.width = "18%";
+  }
 }
 
 const closeNav = () => {
