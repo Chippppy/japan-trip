@@ -81,3 +81,77 @@
   display: flex;
   justify-content: flex-end;
 }
+
+.nav-button {
+  font-family: 'Bruno Ace', cursive;
+  font-size: 2em;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 15px;
+  border-width: 0px;
+  cursor: pointer;
+  background-color: #f1f1f1;
+  color: #161616;
+  transition: 0.25s;
+}
+
+.nav-button:hover {
+  background-color: #808080;
+  color: #f1f1f1;
+}
+
+.side-navbar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  transition: 0.5s;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.side-navbar a {
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+  transition: 0.3s;
+  color: #818181;
+  width: 100%;
+}
+
+.side-navbar a:hover {
+  color: #f1f1f1;
+}
+
+.side-navbar .closebtn {
+  position: absolute;
+  top: 0;
+  left: 70%;
+  font-size: 50px;
+  margin-right: 50px;
+}
+
+@media screen and (max-height:450px) {
+  .side-navbar {padding-top: 15px;}
+  .side-navbar a {font-size: 18px;}
+}
+
+.main-about {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 20px;
+}
+
+.main-about * {
+  padding-bottom: 10px;
+}
