@@ -5,6 +5,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@200&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,27 +23,56 @@
     <div class="header">
       <nav class="main-nav">
         <div class="logo">
-          <img src="./resources/FullBlackLogo.png">
+          <a href="./index.html"><img src="./resources/FullBlackLogo.png"></a>
         </div>
         <div class="main-title">
           <h2>IN JAPAN</h2>
           <h4>日本で</h4>
         </div>
-        <div class="hamburger-menu">
-          HAMBURGER
+        <div id="mySidenav" class="side-navbar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#">Home</a>
+          <a href="#">Tokyo</a>
+          <a href="#">Mt. Fuji</a>
+          <a href="#">Nagoya</a>
+          <a href="#">Kyoto</a>
+          <a href="#">Osaka</a>
+          <a href="#">Kumano Kodo</a>
+          <a href="#">Hiroshima</a>
+          <a href="#">Fukuoka</a>
         </div>
+        <button onclick="openNav()" class="nav-button">&Sigma;</button>
       </nav>
       <hr>
     </div>
 
     <div class="main-about">
-      <h4>About this trip...</h4>
-      <p>Blah Blah BLah Blah...</p>
-      <hr>
+      <h4>So... My trip to Japan.</h4>
+      <p>The aim of this thing was to be like a 'web diary' of my trip.</p>
+      <p>
+        There's something about posting on socials like Instagram & Facebook that makes 
+        me feel like I'm putting too much of myself out there and makes me insecure. 
+        I do however think that there are parts of my life that are beautiful and worth 
+        sharing with others.
+      </p>
+      <p>
+        I hope my trip to Japan is one of those experiences worth sharing and I'm doing
+        so through this medium.
+      </p>
+      <p>
+        I'll probably get lazy trying to create it and skip some steps like accessability etc.,
+        somethings might break & it may not look the prettiest at times, 
+        but I'll be happy enough with it to call it mine (hopefully).
+      </p>
+      <h4>Enjoy :)</h4>
     </div>
+    <hr>
 
     <div class="main-map">
-
+      <div class="map-container">
+        <img src="./resources/japan-map.svg" class="japan-map-icon"/>
+        
+      </div>
     </div>
     
   </div>
