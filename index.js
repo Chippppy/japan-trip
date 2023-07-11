@@ -52,3 +52,20 @@ const openNav = () => {
 const closeNav = () => {
   document.getElementById('mySidenav').style.width = "0px";
 }
+
+const displayMapTitle = (title) => {
+  let map = document.getElementsByName('image-map');
+  let text = document.createElement('div');
+  text.innerHTML = "<h4 class='map-location'>"+title+"</h4>";
+  text.id = 'map-location';
+  map[0].appendChild(text);
+  console.log(title);
+}
+
+const removeMapTitle = () => {
+  let map = document.getElementsByName('image-map');
+  let child = document.getElementById('map-location');
+  console.log(child);
+  map[0].removeChild(child);
+}
+
