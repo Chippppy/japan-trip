@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <link rel="stylesheet" href="../individualDay.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,7 +10,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
-
 <body>
   <div class="main-content">
     <div class="header">
@@ -40,9 +38,7 @@
       <hr>
     </div>
 
-    <a class="city-header" href="./Tokyo.html">
-      <h2>TOKYO</h2>
-    </a>
+    <a class="city-header"><h2>KYOTO</h2></a>
     <hr>
 
     <h2 class="calendar-title">Dates</h2>
@@ -50,33 +46,33 @@
       <div class="calendar-background">
         <div class="calendar-week">
           <a class="calendar-a">17</a>
-          <a class="calendar-a currentview">18</a>
-          <a href="./Tokyo19.html" class="calendar-a activated">19</a>
-          <a href="./Tokyo20.html" class="calendar-a activated">20</a>
-          <a href="./Tokyo21.html" class="calendar-a activated">21</a>
-          <a href="./Tokyo22.html" class="calendar-a activated">22</a>
-          <a href="./Tokyo23.html" class="calendar-a activated">23</a>
+          <a class="calendar-a">18</a>
+          <a class="calendar-a">19</a>
+          <a class="calendar-a">20</a>
+          <a class="calendar-a">21</a>
+          <a class="calendar-a">22</a>
+          <a class="calendar-a">23</a>
         </div>
         <div class="calendar-week">
-          <a href="./Tokyo24.html" class="calendar-a activated">24</a>
-          <a href="./Tokyo25.html" class="calendar-a activated">25</a>
-          <a href="./Tokyo26.html" class="calendar-a activated">26</a>
-          <a href="./Tokyo27.html" class="calendar-a activated">27</a>
+          <a class="calendar-a">24</a>
+          <a class="calendar-a">25</a>
+          <a class="calendar-a">26</a>
+          <a class="calendar-a">27</a>
           <a class="calendar-a">28</a>
           <a class="calendar-a">29</a>
-          <a class="calendar-a">30</a>   
+          <a class="calendar-a">30</a>
         </div>
         <div class="calendar-week">
           <a class="calendar-a">31</a>
           <a class="calendar-a">01</a>
-          <a class="calendar-a">02</a>
-          <a class="calendar-a">03</a>
-          <a class="calendar-a">04</a>
-          <a class="calendar-a">05</a>
-          <a class="calendar-a">06</a>
+          <a href="./Kyoto02.html" class="calendar-a activated">02</a>
+          <a href="./Kyoto03.html" class="calendar-a activated">03</a>
+          <a href="./Kyoto04.html" class="calendar-a activated">04</a>
+          <a href="./Kyoto05.html" class="calendar-a activated">05</a>
+          <a href="./Kyoto06.html" class="calendar-a activated">06</a>
         </div>
         <div class="calendar-week">
-          <a class="calendar-a">07</a>
+          <a href="./Kyoto07.html" class="calendar-a activated">07</a>
           <a class="calendar-a">08</a>
           <a class="calendar-a">09</a>
           <a class="calendar-a">10</a>
@@ -106,83 +102,27 @@
     </div>
 
     <hr>
-    <div class="gallery-container" id="gallery-container">
 
+    <div class="photo-gallery" id="photo-gallery">
+      
     </div>
-
-    <hr>
-    <div class="journal-container">
-      <p>
-        It is a long established fact that a reader will be distracted by the readable content of a page when looking at
-        its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
-        opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing
-        packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum'
-        will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by
-        accident, sometimes on purpose (injected humour and the like).
-      </p>
-    </div>
-    <hr class="end-page">
 
   </div>
 
   <script>
     const openNav = () => {
-      if (mySidenav.style.width == '18%') {
+      if(mySidenav.style.width == '18%') {
         document.getElementById('mySidenav').style.width = "0px"
       } else {
         document.getElementById('mySidenav').style.width = "18%";
       }
     }
-
+    
     const closeNav = () => {
       document.getElementById('mySidenav').style.width = "0px";
     }
   </script>
-
-
-
-  <script>
-    const photos = [
-      '1',
-      '2',
-      '3',
-      '4',
-      '5',
-      '6',
-      '7',
-      '8',
-      '9',
-    ];
-
-    let gallery = document.getElementById('gallery-container');
-
-    photos.forEach(photo => {
-      let imgDiv = document.createElement('div');
-      imgDiv.classList.add('img-div');
-      let img = document.createElement('img');
-      img.src = './Images/' + photo + '.JPG';
-      img.style.maxWidth = '600px';
-      img.style.maxHeight = '600px';
-      img.classList.add('gallery-photo');
-      imgDiv.addEventListener('click', () => {
-        if (img.classList.contains('fullscreen-img')) {
-          imgDiv.classList.remove('fullscreen-div');
-          img.classList.remove('fullscreen-img');
-          img.style.maxWidth = '600px';
-          img.style.maxHeight = '600px';
-        } else {
-          imgDiv.classList.add('fullscreen-div');
-          img.classList.add('fullscreen-img');
-          img.style.maxWidth = '1200px';
-          img.style.maxHeight = '1000px';
-        }
-      })
-      imgDiv.appendChild(img);
-      imgDiv.style.width = '100%';
-      gallery.appendChild(imgDiv);
-    })
-  </script>
+  <script src="./tokyo.js"></script>
 
 </body>
-
 </html>
