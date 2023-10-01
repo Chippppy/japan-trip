@@ -25,15 +25,15 @@
         </div>
         <div id="mySidenav" class="side-navbar">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <a href="#">Home</a>
-          <a href="#">Tokyo</a>
-          <a href="#">Mt. Fuji</a>
-          <a href="#">Nagoya</a>
-          <a href="#">Kyoto</a>
-          <a href="#">Osaka</a>
-          <a href="#">Kumano Kodo</a>
-          <a href="#">Hiroshima</a>
-          <a href="#">Fukuoka</a>
+          <a href="/">Home</a>
+          <a href="/Tokyo/Tokyo.html">Tokyo</a>
+          <a href="/MtFuji/MtFuji.html">Mt. Fuji</a>
+          <a href="/Nagoya/Nagoya.html">Nagoya</a>
+          <a href="/Kyoto/Kyoto.html">Kyoto</a>
+          <a href="/Osaka/Osaka.html">Osaka</a>
+          <a href="/KumanoKodo/KumanoKodo.html">Kumano Kodo</a>
+          <a href="/Hiroshima/Hiroshima.html">Hiroshima</a>
+          <a href="/Fukuoka/Fukuoka.html">Fukuoka</a>
         </div>
         <button onclick="openNav()" class="nav-button">&Sigma;</button>
       </nav>
@@ -51,7 +51,7 @@
         <div class="calendar-week">
           <a class="calendar-a">17</a>
           <a href="./Tokyo18.html" class="calendar-a activated">18</a>
-          <a class="calendar-a currentview">19</a>
+          <a href="./Tokyo19.html" class="calendar-a currentview">19</a>
           <a href="./Tokyo20.html" class="calendar-a activated">20</a>
           <a href="./Tokyo21.html" class="calendar-a activated">21</a>
           <a href="./Tokyo22.html" class="calendar-a activated">22</a>
@@ -97,9 +97,9 @@
           <a class="calendar-a">21</a>
           <a class="calendar-a">22</a>
           <a class="calendar-a">23</a>
-          <a class="calendar-a">24</a>
-          <a class="calendar-a">25</a>
-          <a class="calendar-a">26</a>
+          <a href="./Tokyo24_2.html" class="calendar-a activated">24</a>
+          <a href="./Tokyo25_2.html" class="calendar-a activated">25</a>
+          <a href="./Tokyo26_2.html" class="calendar-a activated">26</a>
           <a class="calendar-a">27</a>
         </div>
       </div>
@@ -143,6 +143,16 @@
 
   <script>
     const photos = [
+      '0',
+      '1',
+      '2',
+      '3',
+      '4',
+      '5',
+      '6',
+      '7',
+      '8',
+      '9',
       '10',
       '11',
       '12',
@@ -190,6 +200,7 @@
       '54',
       '55',
       '57',
+      '58',
       '59',
       '60',
       '61',
@@ -208,17 +219,6 @@
       '74',
       '75',
       '76',
-      '77',
-      '78',
-      '79',
-      '80',
-      '81',
-      '82',
-      '83',
-      '84',
-      '85',
-      '86',
-      '87',
     ];
 
     let gallery = document.getElementById('gallery-container');
@@ -227,7 +227,7 @@
       let imgDiv = document.createElement('div');
       imgDiv.classList.add('img-div');
       let img = document.createElement('img');
-      img.src = './Images/' + photo + '.JPG';
+      img.src = './Images/19/' + photo + '.JPG';
       img.style.maxWidth = '600px';
       img.style.maxHeight = '600px';
       img.classList.add('gallery-photo');

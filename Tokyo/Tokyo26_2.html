@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="../individualDay.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@200&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="main-content">
+    <div class="header">
+      <nav class="main-nav">
+        <div class="logo">
+          <a href="../index.html"><img src="../resources/FullBlackLogo.png"></a>
+        </div>
+        <div class="main-title">
+          <h2>IN JAPAN</h2>
+          <h4>日本で</h4>
+        </div>
+        <div id="mySidenav" class="side-navbar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="/">Home</a>
+          <a href="/Tokyo/Tokyo.html">Tokyo</a>
+          <a href="/MtFuji/MtFuji.html">Mt. Fuji</a>
+          <a href="/Nagoya/Nagoya.html">Nagoya</a>
+          <a href="/Kyoto/Kyoto.html">Kyoto</a>
+          <a href="/Osaka/Osaka.html">Osaka</a>
+          <a href="/KumanoKodo/KumanoKodo.html">Kumano Kodo</a>
+          <a href="/Hiroshima/Hiroshima.html">Hiroshima</a>
+          <a href="/Fukuoka/Fukuoka.html">Fukuoka</a>
+        </div>
+        <button onclick="openNav()" class="nav-button">&Sigma;</button>
+      </nav>
+      <hr>
+    </div>
+
+    <a class="city-header" href="./Tokyo.html">
+      <h2>TOKYO</h2>
+    </a>
+    <hr>
+
+    <h2 class="calendar-title">Dates</h2>
+    <div class="calendar-container">
+      <div class="calendar-background">
+        <div class="calendar-week">
+          <a class="calendar-a">17</a>
+          <a href="./Tokyo18.html" class="calendar-a activated">18</a>
+          <a href="./Tokyo19.html" class="calendar-a activated">19</a>
+          <a href="./Tokyo20.html" class="calendar-a activated">20</a>
+          <a href="./Tokyo21.html" class="calendar-a activated">21</a>
+          <a href="./Tokyo22.html" class="calendar-a activated">22</a>
+          <a href="./Tokyo23.html" class="calendar-a activated">23</a>
+        </div>
+        <div class="calendar-week">
+          <a href="./Tokyo24.html" class="calendar-a activated">24</a>
+          <a href="./Tokyo25.html" class="calendar-a activated">25</a>
+          <a href="./Tokyo26.html" class="calendar-a activated">26</a>
+          <a href="./Tokyo27.html" class="calendar-a activated">27</a>
+          <a class="calendar-a">28</a>
+          <a class="calendar-a">29</a>
+          <a class="calendar-a">30</a>   
+        </div>
+        <div class="calendar-week">
+          <a class="calendar-a">31</a>
+          <a class="calendar-a">01</a>
+          <a class="calendar-a">02</a>
+          <a class="calendar-a">03</a>
+          <a class="calendar-a">04</a>
+          <a class="calendar-a">05</a>
+          <a class="calendar-a">06</a>
+        </div>
+        <div class="calendar-week">
+          <a class="calendar-a">07</a>
+          <a class="calendar-a">08</a>
+          <a class="calendar-a">09</a>
+          <a class="calendar-a">10</a>
+          <a class="calendar-a">11</a>
+          <a class="calendar-a">12</a>
+          <a class="calendar-a">13</a>
+        </div>
+        <div class="calendar-week">
+          <a class="calendar-a">14</a>
+          <a class="calendar-a">15</a>
+          <a class="calendar-a">16</a>
+          <a class="calendar-a">17</a>
+          <a class="calendar-a">18</a>
+          <a class="calendar-a">19</a>
+          <a class="calendar-a">20</a>
+        </div>
+        <div class="calendar-week">
+          <a class="calendar-a">21</a>
+          <a class="calendar-a">22</a>
+          <a class="calendar-a">23</a>
+          <a href="./Tokyo24_2.html" class="calendar-a activated">24</a>
+          <a href="./Tokyo25_2.html" class="calendar-a activated">25</a>
+          <a href="./Tokyo26_2.html" class="calendar-a currentview">26</a>
+          <a class="calendar-a">27</a>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+    <div class="gallery-container" id="gallery-container">
+
+    </div>
+
+    <hr>
+    <div class="journal-container">
+      <p>
+        It is a long established fact that a reader will be distracted by the readable content of a page when looking at
+        its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+        opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing
+        packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum'
+        will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by
+        accident, sometimes on purpose (injected humour and the like).
+      </p>
+    </div>
+    <hr class="end-page">
+
+  </div>
+
+  <script>
+    const openNav = () => {
+      if (mySidenav.style.width == '18%') {
+        document.getElementById('mySidenav').style.width = "0px"
+      } else {
+        document.getElementById('mySidenav').style.width = "18%";
+      }
+    }
+
+    const closeNav = () => {
+      document.getElementById('mySidenav').style.width = "0px";
+    }
+  </script>
+
+
+
+  <script>
+    const photos = [
+      '0',
+      '1',
+      '2',
+      '3',
+    ];
+
+    let gallery = document.getElementById('gallery-container');
+
+    photos.forEach(photo => {
+      let imgDiv = document.createElement('div');
+      imgDiv.classList.add('img-div');
+      let img = document.createElement('img');
+      img.src = './Images/26_2/' + photo + '.JPG';
+      img.style.maxWidth = '600px';
+      img.style.maxHeight = '600px';
+      img.classList.add('gallery-photo');
+      imgDiv.addEventListener('click', () => {
+        if (img.classList.contains('fullscreen-img')) {
+          imgDiv.classList.remove('fullscreen-div');
+          img.classList.remove('fullscreen-img');
+          img.style.maxWidth = '600px';
+          img.style.maxHeight = '600px';
+        } else {
+          imgDiv.classList.add('fullscreen-div');
+          img.classList.add('fullscreen-img');
+          img.style.maxWidth = '1200px';
+          img.style.maxHeight = '1000px';
+        }
+      })
+      imgDiv.appendChild(img);
+      imgDiv.style.width = '100%';
+      gallery.appendChild(imgDiv);
+    })
+  </script>
+
+</body>
+
+</html>
