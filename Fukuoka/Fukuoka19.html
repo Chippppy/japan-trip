@@ -25,15 +25,15 @@
         </div>
         <div id="mySidenav" class="side-navbar">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <a href="#">Home</a>
-          <a href="#">Tokyo</a>
-          <a href="#">Mt. Fuji</a>
-          <a href="#">Nagoya</a>
-          <a href="#">Kyoto</a>
-          <a href="#">Osaka</a>
-          <a href="#">Kumano Kodo</a>
-          <a href="#">Hiroshima</a>
-          <a href="#">Fukuoka</a>
+          <a href="/">Home</a>
+          <a href="/Tokyo/Tokyo.html">Tokyo</a>
+          <a href="/MtFuji/MtFuji.html">Mt. Fuji</a>
+          <a href="/Nagoya/Nagoya.html">Nagoya</a>
+          <a href="/Kyoto/Kyoto.html">Kyoto</a>
+          <a href="/Osaka/Osaka.html">Osaka</a>
+          <a href="/KumanoKodo/KumanoKodo.html">Kumano Kodo</a>
+          <a href="/Hiroshima/Hiroshima.html">Hiroshima</a>
+          <a href="/Fukuoka/Fukuoka.html">Fukuoka</a>
         </div>
         <button onclick="openNav()" class="nav-button">&Sigma;</button>
       </nav>
@@ -113,12 +113,7 @@
     <hr>
     <div class="journal-container">
       <p>
-        It is a long established fact that a reader will be distracted by the readable content of a page when looking at
-        its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
-        opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing
-        packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum'
-        will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by
-        accident, sometimes on purpose (injected humour and the like).
+        ...
       </p>
     </div>
     <hr class="end-page">
@@ -142,6 +137,26 @@
   <script>
     const photos = [
       '0',
+      '1',
+      '2',
+      '3',
+      '4',
+      '5',
+      '6',
+      '7',
+      '8',
+      '9',
+      '10',
+      '11',
+      '12',
+      '13',
+      '14',
+      '15',
+      '16',
+      '17',
+      '18',
+      '19',
+      '20',
     ];
 
     let gallery = document.getElementById('gallery-container');
@@ -150,7 +165,7 @@
       let imgDiv = document.createElement('div');
       imgDiv.classList.add('img-div');
       let img = document.createElement('img');
-      img.src = './Images/' + photo + '.JPG';
+      img.src = './Images/19/' + photo + '.JPG';
       img.style.maxWidth = '600px';
       img.style.maxHeight = '600px';
       img.classList.add('gallery-photo');
