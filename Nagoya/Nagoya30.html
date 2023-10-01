@@ -25,15 +25,15 @@
         </div>
         <div id="mySidenav" class="side-navbar">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <a href="#">Home</a>
-          <a href="#">Tokyo</a>
-          <a href="#">Mt. Fuji</a>
-          <a href="#">Nagoya</a>
-          <a href="#">Kyoto</a>
-          <a href="#">Osaka</a>
-          <a href="#">Kumano Kodo</a>
-          <a href="#">Hiroshima</a>
-          <a href="#">Fukuoka</a>
+          <a href="/">Home</a>
+          <a href="/Tokyo/Tokyo.html">Tokyo</a>
+          <a href="/MtFuji/MtFuji.html">Mt. Fuji</a>
+          <a href="/Nagoya/Nagoya.html">Nagoya</a>
+          <a href="/Kyoto/Kyoto.html">Kyoto</a>
+          <a href="/Osaka/Osaka.html">Osaka</a>
+          <a href="/KumanoKodo/KumanoKodo.html">Kumano Kodo</a>
+          <a href="/Hiroshima/Hiroshima.html">Hiroshima</a>
+          <a href="/Fukuoka/Fukuoka.html">Fukuoka</a>
         </div>
         <button onclick="openNav()" class="nav-button">&Sigma;</button>
       </nav>
@@ -143,6 +143,39 @@
 
   <script>
     const photos = [
+      '0',
+      '1',
+      '2',
+      '3',
+      '4',
+      '5',
+      '6',
+      '7',
+      '8',
+      '9',
+      '10',
+      '11',
+      '12',
+      '13',
+      '14',
+      '15',
+      '16',
+      '17',
+      '18',
+      '19',
+      '20',
+      '21',
+      '22',
+      '23',
+      '24',
+      '25',
+      '26',
+      '27',
+      '28',
+      '29',
+      '30',
+      '31',
+      '32',
       '33',
       '34',
       '35',
@@ -166,7 +199,6 @@
       '53',
       '54',
       '55',
-      '56',
       '57',
       '58',
       '59',
@@ -174,7 +206,6 @@
       '61',
       '62',
       '63',
-      '64',
     ];
 
     let gallery = document.getElementById('gallery-container');
@@ -183,7 +214,7 @@
       let imgDiv = document.createElement('div');
       imgDiv.classList.add('img-div');
       let img = document.createElement('img');
-      img.src = './Images/' + photo + '.JPG';
+      img.src = './Images/30/' + photo + '.JPG';
       img.style.maxWidth = '600px';
       img.style.maxHeight = '600px';
       img.classList.add('gallery-photo');
